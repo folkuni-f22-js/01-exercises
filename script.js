@@ -26,9 +26,40 @@ function start() {
 	// Övningar
 	console.log('script.js | Övningar')
 	T.setPenColor('#469A24')
-	T.setPenSize(5)
-	T.penUp()
+	T.setPenSize(2)
 
+	const side = 48
+	const pointyTurn = 180 - 36
+	const bluntTurn = -72
+	T.penDown()
+	T.pointInDirection(90)
+	T.move(side)
+	T.turn(pointyTurn)
+	T.move(side)
+	T.turn(bluntTurn)
+
+	T.move(side)
+	T.turn(pointyTurn)
+	T.move(side)
+	T.turn(bluntTurn)
+
+	T.move(side)
+	T.turn(pointyTurn)
+	T.move(side)
+	T.turn(bluntTurn)
+
+	T.move(side)
+	T.turn(pointyTurn)
+	T.move(side)
+	T.turn(bluntTurn)
+
+	T.move(side)
+	T.turn(pointyTurn)
+	T.move(side)
+	T.turn(bluntTurn)
+
+
+	/* 1.3
 	const dashLength = 20
 	const spacing = 10
 	T.pointInDirection(50)
@@ -42,6 +73,7 @@ function start() {
 	T.move(spacing)
 	T.penDown()
 	T.move(dashLength)
+	*/
 	/*
 	// 1.2 square
 	let squareLength = 80
