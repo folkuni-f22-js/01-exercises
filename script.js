@@ -22,19 +22,33 @@ function clear() {
 
 
 
-// This is your first block (function)
-// Replace the code inside to get started!
 function start() {
-	console.log('script.js | Drawing "AA"')
-	T.setPenColor('purple')
-	T.setPenSize(3)
+	// Övningar
+	console.log('script.js | Övningar')
+	T.setPenColor('#469A24')
+	T.setPenSize(5)
 	T.penUp()
-	T.goTo(-90, 20)
+
+	let squareLength = 80
+	let turnAngle = 90
+	T.goTo(0, 0)
+	T.penDown()
+	T.pointInDirection(45)
+	T.move(squareLength)
+	T.turn(turnAngle)
+	T.move(squareLength)
+	T.turn(turnAngle)
+	T.move(squareLength)
+	T.turn(turnAngle)
+	T.move(squareLength)
+
+
+	/*T.goTo(-90, 20)
 
 	drawL()
 	drawA()
-	drawL()
 	drawA()
+	drawL()
 
 	T.goTo(-92, 30)
 	T.penDown()
@@ -44,4 +58,5 @@ function start() {
 	T.move(160)
 	// T.turn(45)
 	// T.move(40)
+	*/
 }
