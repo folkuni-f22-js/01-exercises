@@ -29,6 +29,21 @@ function start() {
 	T.setPenSize(5)
 	T.penUp()
 
+	const dashLength = 20
+	const spacing = 10
+	T.pointInDirection(50)
+	T.penDown()
+	T.move(dashLength)
+	T.penUp()
+	T.move(spacing)
+	T.penDown()
+	T.move(dashLength)
+	T.penUp()
+	T.move(spacing)
+	T.penDown()
+	T.move(dashLength)
+	/*
+	// 1.2 square
 	let squareLength = 80
 	let turnAngle = 90
 	T.goTo(0, 0)
@@ -41,7 +56,7 @@ function start() {
 	T.move(squareLength)
 	T.turn(turnAngle)
 	T.move(squareLength)
-
+	*/
 
 	/*T.goTo(-90, 20)
 
