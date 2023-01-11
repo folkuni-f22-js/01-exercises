@@ -30,28 +30,40 @@ function start() {
 
 	exercise_2_2a()
 	exercise_2_2b()
+	exercise_2_2c()
 	// exercise_2_1()
 	// exercise_1_4()
 	// exercise_1_3()
 	// exercise_1_2()
+}
 
-
-	/*T.goTo(-90, 20)
-
-	drawL()
-	drawA()
-	drawA()
-	drawL()
-
-	T.goTo(-92, 30)
+function exercise_2_2c() {
+	T.penUp()
+	T.setPenSize(9)
+	T.goTo(-20, 100)
+	T.pointInDirection(45)
 	T.penDown()
-	// T.setPenColor('lightgreen')
-	T.setPenColor('darkgreen')
-	T.pointInDirection(90)
-	T.move(160)
-	// T.turn(45)
-	// T.move(40)
-	*/
+
+	let color = 1
+	for (let count = 0; count < 20; count = count + 1) {
+		console.log('Inside loop. count: ' + count + ', color: ' + color)
+		if (color == 1) {
+			T.setPenColor('purple')
+		} else if(color == 2) {
+			T.setPenColor('yellow')
+		} else {
+			T.setPenColor('red')
+		}
+		color = color + 1
+		if( color > 3 ) {
+			color = 1
+		}
+		T.move(10)
+
+		if( count % 4 == 2 ) {
+			T.turn(45)
+		}
+	}
 }
 
 function exercise_2_2b() {
