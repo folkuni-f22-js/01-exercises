@@ -28,7 +28,8 @@ function start() {
 	T.setPenColor('#469A24')
 	T.setPenSize(2)
 
-	exercise_2_1b()
+	exercise_2_2a()
+	exercise_2_2b()
 	// exercise_2_1()
 	// exercise_1_4()
 	// exercise_1_3()
@@ -53,22 +54,42 @@ function start() {
 	*/
 }
 
-function exercise_2_1b() {
+function exercise_2_2b() {
+	T.penUp()
+	T.setPenSize(7)
+	T.goTo(-100, 120)
+	T.pointInDirection(45)
+	T.penDown()
+	
+	let color = 1
+	for (let count = 0; count < 20; count = count + 1) {
+		console.log('Inside loop. count: ' + count + ', color: ' + color)
+		if( color == 1 ) {
+			T.setPenColor('purple')
+			color = 2
+		} else {
+			T.setPenColor('yellow')
+			color = 1
+		}
+		T.move(10)
+	}
+}
+function exercise_2_2a() {
 	T.goTo(-100, 100)
 	T.pointInDirection(45)
 	T.penDown()
 	T.setPenColor('purple')
 
-	console.log('1')
+	// console.log('1')
 	// definiera variabel; villkor; ändra variabel
 	for( let count=0; count < 10; count = count + 1 ) {
-		console.log('2')
+		// console.log('2')
 		T.move(10)
 		T.penUp()
 		T.move(10)
 		T.penDown()
 	}
-	console.log('3')
+	// console.log('3')
 }
 function exercise_2_1() {
 	console.log('exercise_2_1  1')
