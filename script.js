@@ -28,7 +28,8 @@ function start() {
 	T.setPenColor('#469A24')
 	T.setPenSize(2)
 
-	exercise_1_4()
+		exercise_2_1()
+	// exercise_1_4()
 	// exercise_1_3()
 	// exercise_1_2()
 
@@ -49,6 +50,22 @@ function start() {
 	// T.turn(45)
 	// T.move(40)
 	*/
+}
+
+function exercise_2_1() {
+	console.log('exercise_2_1  1')
+	T.penDown()
+	T.setPenColor('green')
+
+	let count = 0
+	console.log('exercise_2_1  2')
+	while( count < 10 ) {
+		console.log('exercise_2_1  3')
+		T.move(15)
+		T.turn(5)
+		count = count + 1
+	}
+	console.log('exercise_2_1  4')
 }
 
 function exercise_1_2() {
