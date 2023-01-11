@@ -28,6 +28,62 @@ function start() {
 	T.setPenColor('#469A24')
 	T.setPenSize(2)
 
+	exercise_1_4()
+	// exercise_1_3()
+	// exercise_1_2()
+
+
+	/*T.goTo(-90, 20)
+
+	drawL()
+	drawA()
+	drawA()
+	drawL()
+
+	T.goTo(-92, 30)
+	T.penDown()
+	// T.setPenColor('lightgreen')
+	T.setPenColor('darkgreen')
+	T.pointInDirection(90)
+	T.move(160)
+	// T.turn(45)
+	// T.move(40)
+	*/
+}
+
+function exercise_1_2() {
+	// 1.2 square
+	let squareLength = 80
+	let turnAngle = 90
+	T.goTo(0, 0)
+	T.penDown()
+	T.pointInDirection(45)
+	T.move(squareLength)
+	T.turn(turnAngle)
+	T.move(squareLength)
+	T.turn(turnAngle)
+	T.move(squareLength)
+	T.turn(turnAngle)
+	T.move(squareLength)
+}
+function exercise_1_3() {
+	// 1.3
+	const dashLength = 20
+	const spacing = 10
+	T.pointInDirection(50)
+	T.penDown()
+	T.move(dashLength)
+	T.penUp()
+	T.move(spacing)
+	T.penDown()
+	T.move(dashLength)
+	T.penUp()
+	T.move(spacing)
+	T.penDown()
+	T.move(dashLength)
+}
+
+function exercise_1_4() {
 	const side = 48
 	const pointyTurn = 180 - 36
 	const bluntTurn = -72
@@ -57,53 +113,4 @@ function start() {
 	T.turn(pointyTurn)
 	T.move(side)
 	T.turn(bluntTurn)
-
-
-	/* 1.3
-	const dashLength = 20
-	const spacing = 10
-	T.pointInDirection(50)
-	T.penDown()
-	T.move(dashLength)
-	T.penUp()
-	T.move(spacing)
-	T.penDown()
-	T.move(dashLength)
-	T.penUp()
-	T.move(spacing)
-	T.penDown()
-	T.move(dashLength)
-	*/
-	/*
-	// 1.2 square
-	let squareLength = 80
-	let turnAngle = 90
-	T.goTo(0, 0)
-	T.penDown()
-	T.pointInDirection(45)
-	T.move(squareLength)
-	T.turn(turnAngle)
-	T.move(squareLength)
-	T.turn(turnAngle)
-	T.move(squareLength)
-	T.turn(turnAngle)
-	T.move(squareLength)
-	*/
-
-	/*T.goTo(-90, 20)
-
-	drawL()
-	drawA()
-	drawA()
-	drawL()
-
-	T.goTo(-92, 30)
-	T.penDown()
-	// T.setPenColor('lightgreen')
-	T.setPenColor('darkgreen')
-	T.pointInDirection(90)
-	T.move(160)
-	// T.turn(45)
-	// T.move(40)
-	*/
 }
